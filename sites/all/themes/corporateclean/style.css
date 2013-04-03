@@ -604,3 +604,6 @@ ul.primary li a, ul.tabs li a { margin:0; padding: 4px 1em; display: inline-bloc
 @media screen and (max-width: 480px) {
 	#footer-inside .footer-area .region-footer-first, #footer-inside .footer-area .region-footer-second{border-right: none;padding-right: 0em;border-bottom: solid 1px #444;padding-bottom: 1em;}
 }
+#block-drupal-farming-solution-beta{
+	position: inherit;
+}

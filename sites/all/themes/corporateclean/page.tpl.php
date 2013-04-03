@@ -1,6 +1,5 @@
 <!-- #header -->
 <div id="header">
-<img id="beta" src="/sites/all/themes/corporateclean/mockup/beta.png" title="beta" alt="beta"/>
 	<!-- #header-inside -->
 	<div id="header-inside" class="container_12 clearfix">
 		<!-- #header-inside-left -->
