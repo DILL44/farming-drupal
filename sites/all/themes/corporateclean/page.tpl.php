@@ -1,6 +1,4 @@
 <!-- #header -->
-<?php if (!isset($_COOKIE['slider'])){setcookie('slider',"show");}?>
-
 <div id="header">
 <img id="beta" src="/sites/all/themes/corporateclean/mockup/beta.png" title="beta" alt="beta"/>
 	<!-- #header-inside -->
@@ -73,13 +71,13 @@
 
 <!-- #banner -->
 <div id="banner">
-<?php if ($_COOKIE['slider']=='hidden'):?>	
+<?php if (isset($_COOKIE['slider'])):if ($_COOKIE['slider']=='hidden'):?>	
 	<script type="text/javascript">
 	jQuery(window).load(function() {
 			jQuery('#banner').slideToggle(1);
 		});
 	</script>
-<?php endif; ?>
+<?php endif; endif;?>
 	
 	<?php print render($page['banner']); ?>
 
@@ -97,7 +95,7 @@
 
 <!-- #content -->
 <div id="content">
-	<?php if (theme_get_setting('slideshow_display','corporateclean')): ?>
+	<?php if (isset($_COOKIE['slider'])): if (theme_get_setting('slideshow_display','corporateclean')): ?>
 	<?php if ($_COOKIE['slider']=='show'):?>
 	<div id="bouton_slider">cacher le slider</div>
 	<?php endif; ?>
@@ -109,6 +107,10 @@
 	});
 	</script>
 	<?php endif; ?>
+	<?php endif; ?>
+	<?php endif; ?>
+	<?php if (!isset($_COOKIE['slider'])): setcookie('slider',"show");?>
+	<div id="bouton_slider">cacher le slider</div>
 	<?php endif; ?>
 	<!-- #content-inside -->
 	<div id="content-inside" class="container_12 clearfix">

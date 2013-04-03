@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the drupal farming solution feature.
+ */
+
+include_once 'drupal_farming_solution.features.inc';
