@@ -34,6 +34,10 @@ function drupal_farming_solution_block_info() {
 			'info' => t('beta image'),
 			'cache' => DRUPAL_NO_CACHE,
 	);
+	$block['propulse'] = array(
+			'info' => t('propulse'),
+			'cache' => DRUPAL_NO_CACHE,
+	);
 	return $block;
 }
 
@@ -41,9 +45,22 @@ function drupal_farming_solution_block_view($delta = '') {
   $block = array();
   switch ($delta) {
     case 'beta':
-      $block['subject'] = t('Block Name');
-      $block['content'] = '<img id="beta" src="/sites/all/themes/corporateclean/mockup/beta.png" title="beta" alt="beta"/>';
+      $block['subject'] = t('');
+      $block['content'] = '<img id="beta" src="/sites/all/modules/drupal_farming_solution/image/beta.png" title="beta" alt="beta"/>';
       break;
+    case 'propulse':
+    	$block['subject'] = t('');
+      	$block['content'] = 'Utilise la solution <a href="http://www.acquia.com">aquila
+      			<img style="display: inline;vertical-align: middle;" title="aquila" src="/sites/all/modules/drupal_farming_solution/image/sprite-acquia.png" alt="aquila"/></a>
+				basé sur <a href="www.drupal.org">drupal
+      			<img style="display: inline;vertical-align: middle;" title="drupal" src="/sites/all/modules/drupal_farming_solution/image/drupal.png" alt="drupal"/></a>
+				. Utilise le thème <a href="http://www.drupalizing.com">
+				<img style="display: inline;vertical-align: middle;" title="corporate clean" src="/sites/all/modules/drupal_farming_solution/image/logo.png" alt="corporate clean"/>
+				de drupalizing</a>
+      			. Developpée par <a href="http://www.developpement-internet-logiciel-libre.net/">
+				<img style="display: inline;vertical-align: middle;" title="corporate clean" src="/sites/all/modules/drupal_farming_solution/image/dill.png" alt="dill"/>
+      			</a>.';
+      	break;
   }
   return $block;
 }

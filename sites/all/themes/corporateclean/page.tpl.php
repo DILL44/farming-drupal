@@ -221,7 +221,7 @@
 			<!-- #footer-bottom-inside -->
 			<div id="footer-bottom-inside" class="container_12 clearfix">
 				<!-- #footer-bottom-left -->
-				<div id="footer-bottom-left" class="grid_8">
+				<div id="footer-bottom-left" class="grid_12">
 
 					<?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('class' => array('secondary-menu', 'links', 'clearfix')))); ?>
 

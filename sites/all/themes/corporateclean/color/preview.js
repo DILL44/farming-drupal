@@ -13,7 +13,7 @@
 		$('div').remove('#preview-logo');
 		}
 		
-		$('#palette input[name="palette[nodebg]"]', form).val();
+		$('#preview .node', form).css('background-color',$('#palette input[name="palette[nodebg]"]', form).val());
 
 		
 		// Text preview.

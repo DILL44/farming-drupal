@@ -31,7 +31,7 @@ a img { border:none; outline: none; display:block; overflow:hidden; }
 
 img.masked, .field-type-image img { background:#fff; border:1px solid #555555; padding:10px; margin: 1em 2em 2em 1em; float: left; -webkit-box-shadow: 0 0 1em black;-moz-box-shadow: 0 0 1em black;box-shadow: 0 0 1em black; }
 
-img { max-width: 100%; height: auto; 
+img { max-width: 90%; height: auto; 
 -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 code { display:inline-block; font-family: "Courier New", Courier, monospace; border: 1px solid #555555; color: #0F0;background-color: #333;box-shadow: 0 0 0.5em #888;padding: 1em;font-size: 1.3em}
@@ -606,4 +606,7 @@ ul.primary li a, ul.tabs li a { margin:0; padding: 4px 1em; display: inline-bloc
 }
 #block-drupal-farming-solution-beta{
 	position: inherit;
+}
+#block-node-recent .even{
+	background: none;
 }
